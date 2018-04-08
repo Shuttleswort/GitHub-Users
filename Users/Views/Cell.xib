@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="152" id="EnI-Iv-Hd5" customClass="Cell" customModule="Users" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EnI-Iv-Hd5" id="8df-Ui-3sn">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="151.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWn-Lp-8IO">
+                        <rect key="frame" x="8" y="8" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="5r7-8m-JYF"/>
+                            <constraint firstAttribute="height" constant="100" id="vW3-BK-N8R"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="itemsPerPage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wi5-1V-uyg">
+                        <rect key="frame" x="116" y="44" width="251" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cen-IO-uLy">
+                        <rect key="frame" x="8" y="118" width="359" height="23.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbA-B7-cNc">
+                        <rect key="frame" x="116" y="8" width="259" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zbA-B7-cNc" secondAttribute="trailing" id="1B7-Xa-KBh"/>
+                    <constraint firstItem="wi5-1V-uyg" firstAttribute="top" secondItem="zbA-B7-cNc" secondAttribute="bottom" constant="15" id="5U5-bL-Ep9"/>
+                    <constraint firstItem="zbA-B7-cNc" firstAttribute="top" secondItem="OWn-Lp-8IO" secondAttribute="top" id="73Y-Jg-BjG"/>
+                    <constraint firstAttribute="trailing" secondItem="Cen-IO-uLy" secondAttribute="trailing" constant="8" id="85D-Sp-HiT"/>
+                    <constraint firstItem="OWn-Lp-8IO" firstAttribute="leading" secondItem="8df-Ui-3sn" secondAttribute="leading" constant="8" id="8fg-OB-Ia3"/>
+                    <constraint firstItem="Cen-IO-uLy" firstAttribute="leading" secondItem="8df-Ui-3sn" secondAttribute="leading" constant="8" id="Mn1-0i-J4B"/>
+                    <constraint firstItem="zbA-B7-cNc" firstAttribute="leading" secondItem="OWn-Lp-8IO" secondAttribute="trailing" constant="8" id="Uzm-3j-29I"/>
+                    <constraint firstItem="wi5-1V-uyg" firstAttribute="leading" secondItem="OWn-Lp-8IO" secondAttribute="trailing" constant="8" id="ceg-E5-AtB"/>
+                    <constraint firstItem="Cen-IO-uLy" firstAttribute="top" secondItem="OWn-Lp-8IO" secondAttribute="bottom" constant="10" id="dE7-95-pe6"/>
+                    <constraint firstItem="OWn-Lp-8IO" firstAttribute="top" secondItem="8df-Ui-3sn" secondAttribute="top" constant="8" id="qoW-lm-df8"/>
+                    <constraint firstAttribute="trailing" secondItem="wi5-1V-uyg" secondAttribute="trailing" constant="8" id="tqp-n1-thu"/>
+                    <constraint firstAttribute="bottom" secondItem="Cen-IO-uLy" secondAttribute="bottom" constant="10" id="wGS-WX-OAE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="OWn-Lp-8IO" id="sH9-Tr-qoI"/>
+                <outlet property="loginLabel" destination="wi5-1V-uyg" id="uHt-7X-7Zy"/>
+                <outlet property="profileLink" destination="Cen-IO-uLy" id="19t-18-aVh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
